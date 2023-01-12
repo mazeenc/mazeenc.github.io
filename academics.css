@@ -1,0 +1,227 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body
+{
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+.navbar
+{
+    background-color: black;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar img
+{
+    width: 4%;
+}
+
+.navbar ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar ul li
+{
+    list-style: none;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: #fff;
+    transition: color 0.2s ease-in-out;
+}
+
+.sub-menu-one
+{
+    display: none;
+    color: #fff;
+}
+
+.sub-menu-one ul li a
+{
+    position: relative;
+    right: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar ul li:hover .sub-menu-one
+{
+    display: block;
+    height: 200px;
+    position: absolute;
+    top: 25px;
+    background: black;
+    margin-top: 30px;
+    margin-right: 15px;
+}
+
+.navbar ul li:hover .sub-menu-one ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.navbar ul li:hover .sub-menu-one ul li
+{
+    position: relative;
+    top: 30px;
+    width: 120px;
+    padding: 10px;
+}
+
+.navbar ul li:hover .sub-menu-one ul li a:hover
+{
+    color: #ff1100;
+}
+
+.navbar ul li a:hover
+{
+    color: #ff1100;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+section
+{
+    width: 100%;
+    height: 755px;
+}
+
+.blanksec
+{
+    height: 70px;
+    background-color: black;
+}
+/*----------------------------------------------*/
+.curriculum
+{
+    background-image: url("https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/GettyImages-577674005_492115_zfpgiw.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.curriculum h1
+{
+    text-align: center;
+    position: relative;
+    top: 370px;
+    transform: translateY(0);
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px #ff1100;
+    transition: transform 0.5s ease-in-out;
+}
+
+.curriculum:hover h1
+{
+    -webkit-text-fill-color: #ff1100;
+    transform: translateY(-10px);
+}
+/*----------------------------------------------*/
+
+.guidance
+{
+    background-image: url("office.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.guidance h1
+{
+    text-align: center;
+    position: relative;
+    top: 330px;
+    transform: translateY(0);
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px #ff1100;
+    transition: transform 0.5s ease-in-out;
+}
+
+.guidance:hover h1
+{
+    -webkit-text-fill-color: #ff1100;
+    transform: translateY(-10px);
+}
+
+/*----------------------------------------------*/
+
+.advanced-placement
+{
+    background-image: url("https://www.americanprogress.org/wp-content/uploads/2022/08/GettyImages-1266183854cropped.jpg?w=1680");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.advanced-placement h1
+{
+    text-align: center;
+    position: relative;
+    top: 330px;
+    transform: translateY(0);
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px #ff1100;
+    transition: transform 0.5s ease-in-out;
+}
+
+.advanced-placement:hover h1
+{
+    -webkit-text-fill-color: #ff1100;
+    transform: translateY(-10px);
+}
+
+/*-----------------------------------------------*/
+
+.tutoring
+{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5c44ea9771069967effbe11d/19e48791-1ea1-4296-91b1-fd754c9ea328/tutor.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.tutoring h1
+{
+    text-align: center;
+    position: relative;
+    top: 330px;
+    transform: translateY(0);
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2px #ff1100;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tutoring:hover h1
+{
+    -webkit-text-fill-color: #ff1100;
+    transform: translateY(-10px);
+}

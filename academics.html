@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Academics</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="04.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a312bea304.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="academics.css">
+    </head>
+    <body>
+        <header class="navbar">
+            <img src="https://dwchs.net/assets/img/school/school-logo.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="academics.html">Academics</a>
+                    <div class="sub-menu-one">
+                        <ul id="academicdropdown">
+                            <li><a href="#">Curriculum</a></li>
+                            <li><a href="#">Guidance</a></li>
+                            <li><a href="#">AP</a></li>
+                            <li><a href="#">Tutoring</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="athletics.html">Athletics</a></li>
+                <li><a href="studentlife.html">Student Life</a></li>
+                <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </header>
+        <a href="#"><section class="curriculum">
+            <h1>Curriculum</h1>
+        </section></a>
+        <a href="#"><section class="blanksec"></section>
+        <section class="guidance">
+            <h1>Guidance</h1>
+        </section></a>
+        <section class="blanksec"></section>
+        <a href="#"><section class="advanced-placement">
+            <h1>Advanced Placement</h1>
+        </section></a>
+        <section class="blanksec"></section>
+        <a href="#"><section class="tutoring">
+            <h1>Tutoring</h1>
+        </section></a>
+        <script>
+            function refreshPage () {
+                var page_y = $( document ).scrollTop();
+                window.location.href = window.location.href + '?page_y=' + page_y;
+            }
+            window.onload = function () {
+                setTimeout(refreshPage, 35000);
+                if ( window.location.href.indexOf('page_y') != -1 ) {
+                    var match = window.location.href.split('?')[1].split("&")[0].split("=");
+                    $('html, body').scrollTop( match[1] );
+                }
+            }
+            </script>
+    </body>
+</html>
